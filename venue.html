@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIGERIA NET - Venue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">NIGERIA NET</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="venue">
+            <h2>Event Venue</h2>
+            <div class="venue-details">
+                <p><strong>Location:</strong> Victoria Island, Lagos, Nigeria</p>
+                <p><strong>Address:</strong> 123 Conference Avenue, Victoria Island</p>
+                <p><strong>Date:</strong> November 25-27, 2024</p>
+                <p>The Tech Conference 2024 will be held at the prestigious Victoria Conference Center. Enjoy the state-of-the-art facilities and vibrant atmosphere of Lagos.</p>
+            </div>
+            <div class="venue-map">
+                <h3>Find Us Here</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.837020423178!2d3.4031616516315576!3d6.428179395329373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf516639370fb%3A0x17a5b7dd15fd17f3!2sVictoria%20Island%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1604821375242!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Nigeria Net. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+    <script>
+        function initMap() {
+            var venue = {lat: 6.4854, lng: 3.1913}; // Coordinates for Lagos, Nigeria
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: venue
+            });
+            var marker = new google.maps.Marker({
+                position: venue,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF_czXcnSuJfkSDL7n6Z29vqu43wgRvuI&callback=initMap"></script>

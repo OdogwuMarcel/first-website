@@ -1,0 +1,433 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    padding: 0;
+    background: linear-gradient(135deg, #a32fa3, #414345); /* Gradient from dark to light */ 
+    color: #333; 
+    background-attachment: fixed; /* Ensure the gradient stays fixed while scrolling */
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: fit;
+    padding: 20px;
+}
+
+.header, .footer { 
+    background-color: #333; 
+    color: white; 
+    
+} 
+.header { 
+    padding: 15px 20px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+    box-sizing: border-box; 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.nav-links li {
+    /* display: inline; */
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px 10px; 
+    display: block;
+}
+
+.nav-links a:hover {
+    color: #ff5722;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+    margin-top: 60px; /* To offset the fixed header */ 
+}
+.hero-video { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+.features, .testimonials, .newsletter { 
+    text-align: center; 
+    padding: 60px 20px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 20px 0; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.features-list, .testimonial-list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+} 
+.feature, .testimonial { 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    flex: 1 1 300px; 
+    max-width: 300px; 
+} 
+.testimonial p { 
+    font-style: italic; 
+} 
+.newsletter form { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+.newsletter input { 
+    padding: 10px; 
+    font-size: 1em; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    width: 100%; 
+    max-width: 400px; 
+} 
+.newsletter button { 
+    padding: 10px 20px; 
+    background-color: #ff5722; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+.newsletter button:hover { 
+    background-color: #e64a19; 
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.speakers, .schedule, .venue, .register {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.speakers h2, .schedule h2, .venue h2, .register h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.speakers-list, .schedule-list, .register form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.speakers-list > div, .schedule-list > div, .register form > div {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Importing a beautiful font */
+
+.logo {
+    font-family: 'Pacifico', cursive; /* Applying the beautiful font */
+    font-size: 28px; /* Making it larger */
+    color: #ff6600; /* Using a bright color to make it stand out */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a shadow for more emphasis */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarging the text on hover */
+}
+/* Additional styling for the speakers section */
+.speakers {
+    color: #ff6600;
+    text-align: center;
+    padding: 20px;
+    background: #a32fa3;
+}
+
+.speakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speaker-profile {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.speaker-profile h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.speaker-profile p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero h1 {
+    animation: fadeIn 2s ease-in;
+}
+/* Additional styling for speaker profile hover effect */
+@keyframes rainbow {
+    10% { border-color: orange; }
+    50% { border-color: red; }
+    80% { border-color: orange; }
+    20% { border-color: yellow; }
+    /* 48% { border-color: green; }
+    64% { border-color: blue; }
+    80% { border-color: indigo; }
+    100% { border-color: violet; } */
+}
+
+.speaker-profile {
+    background-color: #080808;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.speaker-profile:hover {
+    transform: scale(1.05); /* Slightly enlarge the profile on hover */
+}
+
+.speaker-profile:hover::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    animation: rainbow 2s linear infinite;
+}
+
+.speaker-profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.speaker-profile h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.speaker-profile p {
+    margin: 5px 0;
+    color: #666;
+}
+/* Styles for the registration form */
+.register {
+    text-align: center;
+    padding: 80px 80px;
+    background-color: rgba(255, 244, 244, 0.9);
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #a32fa3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #e64a19;
+}
+/* Styles for the venue section */
+.venue {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+}
+.venue-details {
+    margin-bottom: 40px;
+}
+.venue-details p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+.venue-map iframe {
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styles for the schedule section */
+.schedule {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.schedule h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.event .time {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event .details {
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Ensure footer is pushed to the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
